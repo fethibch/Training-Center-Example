@@ -1,0 +1,26 @@
+
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<body>
+
+
+<div class="page-container">
+
+  <form >
+    <h1>Sign Up</h1>
+
+    <input type="text" name="tele" class="Tele" placeholder="name" [(ngModel)]="sign.nom" [ngModelOptions]="{standalone: true}">
+    <input type="text" name="email" class="Tele" placeholder="last name" [(ngModel)]="sign.prenom" [ngModelOptions]="{standalone: true}">
+    <input type="text" name="name" class="Name" placeholder="login"[(ngModel)]="sign.login" [ngModelOptions]="{standalone: true}">
+    <input type="text" name="tele" class="Email" placeholder="mail"[(ngModel)]="sign.mail" [ngModelOptions]="{standalone: true}">
+    <input type="text" name="tele" class="Tele" placeholder="education"[(ngModel)]="sign.etude" [ngModelOptions]="{standalone: true}">
+    <input type="password" name="password" class="Address" placeholder="password"[(ngModel)]="sign.pass" [ngModelOptions]="{standalone: true}">
+    <button type="submit" value="Add" name="submit"(click) ="signup()" routerLink="/login">Submit</button>
+  </form>
+</div>
+
+
+</body>
+

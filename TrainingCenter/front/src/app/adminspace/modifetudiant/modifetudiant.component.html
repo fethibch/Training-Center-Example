@@ -1,0 +1,74 @@
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <div class="panel-heading text-center"><h1>Student List</h1></div></div>
+</div>
+<div class="container">
+
+  <table class="table table-condensed">
+
+    <thead>
+    <tr>
+      <th>id</th>
+      <th>first name</th>
+      <th>last name</th>
+      <th>study</th>
+
+      <th>login</th>
+      <th>password</th>
+      <th>mail</th>
+
+    </tr>
+    </thead>
+    <tbody>
+
+    <tr *ngFor="let c of etudiantlist">
+      <td> {{ c.id}} </td>
+      <td> {{c.nom}}</td>
+      <td> {{ c.prenom}} </td>
+      <td> {{ c.etude}} </td>
+      <td> {{ c.login}} </td>
+      <td> {{ c.pass}} </td>
+
+      <td> {{ c.mail}} </td>
+      <td> <button type="button" class="btn btn-danger" (click)="deleteetudiant(c)">delete</button> </td>
+
+      <td> <button type="button" class="btn " data-toggle="modal" data-target="#UpdateModal" (click)="getItem(c)"> update</button> </td>
+
+
+
+    </tr>
+
+    </tbody>
+  </table>
+
+</div>
+<div class="modal fade" id="UpdateModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="exampleModalLabel">update</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="exampleModalLabel">Nom formation</label>
+            <input type="text" class="form-control" name="eventName" [(ngModel)]="etudiant.name"  placeholder="name" required/>
+            <input type="text" class="form-control" name="eventName" [(ngModel)]="etudiant.lastname"  placeholder="lastname" required/>
+            <input type="text" class="form-control" name="eventName" [(ngModel)]="etudiant.login"  placeholder="login" required/>
+            <input type="text" class="form-control" name="eventName" [(ngModel)]="etudiant.pass"  placeholder="password" required/>
+            <input type="text" class="form-control" name="eventName" [(ngModel)]="etudiant.study"  placeholder="study" required/>
+            <input type="text" class="form-control" name="eventName" [(ngModel)]="etudiant.mail"  placeholder="mail" required/>
+          </div>
+
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-primary" (click)="OnUpdateetudiant()">Update</button>
+      </div>
+    </div>
+  </div>
+</div>

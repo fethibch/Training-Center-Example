@@ -1,0 +1,16 @@
+<table  class="table tabs-wrapper">
+  <tr>
+    <th>id</th>
+    <th>age</th>
+    <th>etude</th><th>nom</th><th>prenom</th>
+  </tr>
+  <tr *ngFor="let c of listeetudiant">
+    <td> {{ c.id}} </td>
+    <td> {{c.age}}</td>
+    <td> {{c.etude}}</td>
+    <td> {{c.nom}}</td>
+    <td> {{c.prenom}}</td>
+    <td> {{c.login}}</td>
+    <td> {{c.pass}}</td>
+    <td> {{c.mail}}</td>
+</table>
