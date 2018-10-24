@@ -1,7 +1,5 @@
 package com.wind.projet.entities;
 
-import sun.security.util.Password;
-
 import javax.persistence.*;
 import javax.validation.constraints.Email;
 import java.io.Serializable;
