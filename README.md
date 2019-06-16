@@ -1,5 +1,5 @@
 # Springboot2.0-Angular6-Simple-TrainingCenter-Example
-In this project we have created a web application based on Microservice architecture that manage students and trainings of a Training Center.
+In this project we have created a web application that manage students and trainings of a Training Center.
 For the BackEnd side ,this project contains simple CRUD Restful Web Services with Spring Boot to Creat,Read,Update and Delete
 both students and trainings .The FrontEnd Angular app is built using angular-cli.
 ## BackEnd side
