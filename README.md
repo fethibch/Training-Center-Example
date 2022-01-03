@@ -36,7 +36,6 @@ The application will be accessible at http://localhost:4200.
 ![login](https://user-images.githubusercontent.com/40913019/47468517-a03a4c00-d7f3-11e8-988b-f240ca482382.PNG)
 
 **Manage Students**
-![crud students](https://user-images.githubusercontent.com/40913019/47468515-9b759800-d7f3-11e8-8ac5-f3feae9341f3.PNG)
 **Manage Trainings**
 ![crud training](https://user-images.githubusercontent.com/40913019/47468516-9e708880-d7f3-11e8-9e4c-970a8486dadc.PNG)
 **List Training**
